@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "759287515736",
+    "project_id": "auth-demo-c3cf6",
+    "storage_bucket": "auth-demo-c3cf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759287515736:android:e59f01a6beb82aa4b3d82d",
+        "android_client_info": {
+          "package_name": "com.example.auth_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkaNAQ6qlUd7hUxACnq3do7Wk9Cy34OR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
