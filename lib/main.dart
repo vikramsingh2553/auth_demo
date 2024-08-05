@@ -12,17 +12,16 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     Get.put(AuthService());
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) {return AuthProvider();
+        ChangeNotifierProvider(create: (context) {
+          return AuthProvider();
         }),
       ],
       child: MaterialApp(

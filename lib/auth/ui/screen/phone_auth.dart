@@ -26,7 +26,6 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
             padding: EdgeInsets.symmetric(horizontal: 25),
             child: TextField(
               controller: phoneController,
-              // keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 hintText: "Enter Phone Number",
                 suffixIcon: Icon(Icons.phone),

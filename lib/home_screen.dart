@@ -35,18 +35,19 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
-                  final provider = Provider.of<AuthProvider>(context, listen: false);
+                  final provider =
+                      Provider.of<AuthProvider>(context, listen: false);
                   await provider.logout();
                   if (!provider.isError) {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
-                          return const LogInScreen();
-                        }));
+                      return const LogInScreen();
+                    }));
                   }
                 },
                 style: ElevatedButton.styleFrom(
-
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),

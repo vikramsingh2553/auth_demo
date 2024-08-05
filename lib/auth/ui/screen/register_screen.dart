@@ -23,9 +23,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
         title: Text('Create Account'),
       ),
       body: Consumer<AuthProvider>(builder: (context, provider, child) {
-
-        if(provider.isLoading){
-          return Center(child: CircularProgressIndicator(),);
+        if (provider.isLoading) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
         }
         return Padding(
           padding: EdgeInsets.all(16),
@@ -69,8 +70,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       UserModel userModel = UserModel(
                           email: emailController.text,
                           password: passwordController.text);
-                      AuthProvider provider = Provider.of<AuthProvider>(
-                          context, listen: false);
+                      AuthProvider provider =
+                          Provider.of<AuthProvider>(context, listen: false);
 
                       await provider.createAccount(userModel);
 
