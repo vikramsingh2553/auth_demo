@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:auth_demo/home_screen.dart';
+import 'package:auth_demo/product/ui/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -54,7 +54,7 @@ class _OtpScreenState extends State<OtpScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => HomeScreen(),
+                                builder: (context) => HomeScreen(id: '',),
                               ))
                         });
               } catch (ex) {

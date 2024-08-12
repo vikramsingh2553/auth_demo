@@ -3,7 +3,7 @@ import 'package:auth_demo/auth/ui/screen/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../home_screen.dart';
+import '../../../product/ui/home_screen.dart';
 import '../../model/user_model.dart';
 import '../../provider/auth_provider.dart';
 
@@ -136,7 +136,7 @@ class _LogInScreenState extends State<LogInScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => HomeScreen(id: '',),
                                 ),
                               );
                             }
@@ -198,7 +198,7 @@ class _LogInScreenState extends State<LogInScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => HomeScreen(),
+                                builder: (context) => HomeScreen(id: '',),
                               ),
                             );
                           }
